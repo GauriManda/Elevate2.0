@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #e9f2f9;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        
+      }
+      h1 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #222;
+      }
+      .course-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .course-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 23%;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+      .course-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .course-desc {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      .course-stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .course-stats-icon {
+        display: flex;
+        align-items: center;
+      }
+      .course-stats-icon svg {
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+      }
+      .course-stats-value {
+        font-size: 12px;
+        color: #666;
+      }
+      .course-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .course-button:hover {
+        background-color: #0062cc;
+      }
+      .view-all {
+        text-align: right;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #666;
+      }
+      .view-all a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .view-all a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar" style="background-color: #6A9AB0;">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: black;">
+            <img src="SSkill.png" width="100" height="60" class="d-inline-block align-text-center">
+            Skill Stack
+          </a>
+          <nav class="navbar 2" style="color: black;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="Home.html" style="color: black;">Home</a>
+              <a class="navbar-brand" href="About.html" style="color: black;">About Us</a>
+              <a class="navbar-brand" href="contact.html" style="color: black;">Contact Us</a>
+              <a class="navbar-brand" href="SignUp.html" style="color: black;">Sign Up</a>
+            </div>
+          </nav>
+        </div>
+      </nav>
+      
+  
+  </nav>
+    <div class="container">
+      <div class="course-list">
+        <div class="course-card">
+            <div class="course-title">Programming Languages</div>
+            <div class="course-desc"> A Complete Guide</div>
+            <div class="course-stats">
+              <div class="course-stats-icon">
+                <img src="lang.jpeg" width="99%" height="100%" />
+              </div>
+            </div>
+            <div class="course-desc">Beginner to Advance</div>
+            <div class="course-stats">
+              <div class="course-stats-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  />
+                </svg>
+                <span class="course-stats-value">18 seats left</span>
+              </div>
+            </div>
+            <button class="course-button">Explore</button>
+          </div>
+          
+        <div class="course-card">
+          <div class="course-title">Web Development</div>
+          <div class="course-desc">Web Development: A Complete Guide</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <img src="webD.jpeg" width="99%" height="100%" />
+            </div>
+          </div>
+          <div class="course-desc">Beginner to Advance</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+              <span class="course-stats-value">17 seats left</span>
+            </div>
+          </div>
+          <button class="course-button">Explore</button>
+        </div>
+        <div class="course-card">
+          <div class="course-title">Blockchain</div>
+          <div class="course-desc">Blockchain: A Complete Guide</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <img src="blockchain.jpeg" width="99%" height="100%" />
+            </div>
+          </div>
+          <div class="course-desc">Beginner to Advance</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+              <span class="course-stats-value">21 seats left</span>
+            </div>
+          </div>
+          <button class="course-button">Explore</button>
+        </div>
+        <div class="course-card">
+          <div class="course-title">Cyber Security</div>
+          <div class="course-desc">Cyber Security: A Complete Guide</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <img src="cyber.jpeg" width="99%" height="100%" />
+            </div>
+          </div>
+          <div class="course-desc">Beginner to Advance</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+              <span class="course-stats-value">17 seats left</span>
+            </div>
+          </div>
+          <button class="course-button">Explore</button>
+        </div>
+        <div class="course-card">
+          <div class="course-title">Data Science</div>
+          <div class="course-desc">Data Science: A Complete Guide</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <img src="datas.jpeg" width="99%" height="100%" />
+            </div>
+          </div>
+          <div class="course-desc">Beginner to Advance</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+              <span class="course-stats-value">8 seats left</span>
+            </div>
+          </div>
+          <button class="course-button">Explore</button>
+        </div>
+        <div class="course-card">
+          <div class="course-title">
+            Artificial Intelligence & Machine Learning
+          </div>
+          <div class="course-desc">AIML: A Complete Guide</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <img src="aiml.jpeg" width="50%" height="40%" />
+            </div>
+          </div>
+          <div class="course-desc">Beginner to Advance</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+              <span class="course-stats-value">14 seats left</span>
+            </div>
+          </div>
+          <button class="course-button">Explore</button>
+        </div>
+        <div class="course-card">
+          <div class="course-title">Cloud Computing</div>
+          <div class="course-desc">Cloud Computing: A Complete Guide</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <img src="could.jpeg" width="99%" height="100%" />
+            </div>
+          </div>
+          <div class="course-desc">Beginner to Advance</div>
+          <div class="course-stats">
+            <div class="course-stats-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+              <span class="course-stats-value">9 seats left</span>
+            </div>
+          </div>
+          <button class="course-button">Explore</button>
+        </div>
+        <div class="course-card">
+            <div class="course-title">Programming Languages</div>
+            <div class="course-desc"> A Complete Guide</div>
+            <div class="course-stats">
+              <div class="course-stats-icon">
+                <img src="lang.jpeg" width="99%" height="100%" />
+              </div>
+            </div>
+            <div class="course-desc">Beginner to Advance</div>
+            <div class="course-stats">
+              <div class="course-stats-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  />
+                </svg>
+                <span class="course-stats-value">18 seats left</span>
+              </div>
+            </div>
+            <button class="course-button">Explore</button>
+          </div>
+       
+      </div>
+    </div>
+    <footer class="py-3 my-4"></footer>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+      </footer>
+  </body>
+</html>
